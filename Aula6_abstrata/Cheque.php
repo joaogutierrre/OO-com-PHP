@@ -22,6 +22,6 @@ abstract class Cheque {
     }
     
     function real($valor){
-        return number_format($this->valor, 2, ",",".");
+        return number_format($this->valor, '2', ',','.');
     }
 }

@@ -7,9 +7,15 @@
     <body>
         <?php
             require 'Cheque.php';
+            require 'ChequeComum.php';
+            require 'ChequeEspecial.php';
             
-            $cheque = new ChequeComum();
-            $cheque->__cons
+            $chequeComun = new ChequeComum(100.10, "Comum");
+            echo $chequeComun->calcularJuros();
+            
+            $chequeEspecial = new ChequeEspecial(100.10, "Especial");
+            echo $chequeEspecial->calcularJuros();
+            
         ?>
     </body>
 </html>

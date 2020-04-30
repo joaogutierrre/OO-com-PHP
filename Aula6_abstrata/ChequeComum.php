@@ -7,14 +7,10 @@
  */
 class ChequeComum extends Cheque {
     
-    function calcularJuros($valor)
+    function calcularJuros()
     {
-        return $this->valor = $this->valor * 1.25;
+        $this->valor = $this->valor*1.25;
+        $this->valor = parent::real($this->valor);
+        return "Valor do cheque {$this->tipo}: R$ {$this->valor}<hr>";
     }
-    
-    function verValor()
-    {
-        parent::verValor();
-    }
-    
 }

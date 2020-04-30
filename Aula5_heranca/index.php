@@ -29,7 +29,7 @@
         $clientePessoaJuridica->setNomeFantasia('Garibaldo das Custiulimans');
         $clientePessoaJuridica->setCnpj(23042938230923402938423);
         $clientePessoaJuridica->setEndereco('CCLS 104 BLOCO B LOJA 07');
-        $clientePessoaJuridica->setBairro('Asa Sul');
+        $clientePessoaJuridica->setBairro('Asa Sul');   
         echo $clientePessoaJuridica->verEndereco();
         ?>
     </body>
