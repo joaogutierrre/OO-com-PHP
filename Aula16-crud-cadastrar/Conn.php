@@ -10,7 +10,7 @@ class Conn {
     public static $User = "root";
     public static $Pass = "";
     public static $Dbname = "gutierre";
-    private static $Connect = "null";
+    private static $Connect = null;
     
     private static function Conectar()
     {
@@ -22,8 +22,7 @@ class Conn {
             echo 'Mensagem:' . $ex->getMessage();
             die;
         }
-        
-        
+         
         return self::$Connect;
     }
     

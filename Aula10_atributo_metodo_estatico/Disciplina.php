@@ -15,38 +15,38 @@ class Disciplina {
     function __construct($aluno,$notaTrabalho,$notaProva)
     {
 
-    	$this->aluno = $aluno;
-    	$this->notaTrabalho = $notaTrabalho;
-    	$this->notaProva = $notaProva;
+        $this->aluno = $aluno;
+        $this->notaTrabalho = $notaTrabalho;
+        $this->notaProva = $notaProva;
 
-    	self::$media = $this->notaTrabalho + $this->notaProva;
+        self::$media = $this->notaTrabalho + $this->notaProva;
 
-	}
+    }
 
-	function situacao()
-	{
-		if (self::$media >= 6):
+    function situacao()
+    {
+        if (self::$media >= 6):
 
-			return "Aluno {$this->aluno} aprovado com média:" . self::$media . ".<hr>";
+            return "Aluno {$this->aluno} <b>aprovado<b> com média:" . self::$media . ".<hr>";
 
-		else:
+        else:
 
-			return "Aluno {$this->aluno} reprovado com média:" . self::$media . ".<hr>";
+            return "Aluno {$this->aluno} <b>reprovado<b> com média:" . self::$media . ".<hr>";
 
-		endif;	
-	}
+        endif;	
+    }
 
-	static function situacaoAluno()
-	{
-		if (self::$media >= 6):
+    static function situacaoAluno()
+    {
+        if (self::$media >= 6):
 
-			return "Aluno aprovado com média: " . self::$media . ".";
+            return "Aluno aprovado com média: " . self::$media . ".";
 
-		else:
+        else:
 
-			return "Aluno reprovado com média: " . self::$media . ".";
+            return "Aluno reprovado com média: " . self::$media . ".";
 
-		endif;
-	}
+        endif;
+    }
 }
 
