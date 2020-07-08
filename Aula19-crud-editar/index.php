@@ -33,8 +33,7 @@
 			echo "Ainda não houveram alterações<br>";
 		endif;
 
-		echo "<a href='visualizar.php?id=" . $row_user['id'] . "'>Visualizar</a><br><hr>";
-
+		echo "<a href='visualizar.php?id=".$row_user['id']."'>Visualizar</a><br><hr>";
 
 
 	endwhile;
