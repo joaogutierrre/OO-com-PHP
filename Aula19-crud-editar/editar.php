@@ -15,7 +15,7 @@
 
     //Editando dados do usuário.
     $Dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-    var_dump($Dados);
+    // var_dump($Dados);
     if (!empty($Dados['SendEditUser'])) :
         unset($Dados['SendEditUser']);
         $result_up_user = "UPDATE gutierre.usuarios SET nome=:nome, email=:email, usuario=:usuario, senha=:senha, modified=NOW() WHERE id=:id";
