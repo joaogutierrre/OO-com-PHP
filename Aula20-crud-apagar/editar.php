@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,6 +12,7 @@
 <body>
 
     <h1>Editar Usuário</h1>
+    <a href="index.php">Voltar para listagem de usuários<a/><br><br>
     <?php
     require 'Conn.php';
     $conn = new Conn();
@@ -28,10 +32,11 @@
         $resultado_up_user->bindParam(':senha', $Dados['senha']);
         $resultado_up_user->bindParam(':id', $Dados['id']);
 
-        // $resultado_up_user->execute();
+        $resultado_up_user->execute();
 
         if ($resultado_up_user->execute()) :
-            echo "<p style='color:green;'>Registro alterado com sucesso</p>";
+            $_SESSION['msg'] = "<p style='color:green;'>Registro editado com sucesso.</p>";
+            header("Location:index.php");
         else:
             echo "<p style='color:red;'>Falha na alteração de registro</p>";
         endif;
