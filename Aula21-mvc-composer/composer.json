@@ -1,17 +1,17 @@
 {
-    "name": "João Gutierre",
-    "description": "Projeto PHP OO",
-    "authors":[
+    "name": "joaogutierre",
+    "description": "PHP Orientado a objetos",
+    "authors": [
         {
-            "name": "João Gutierre",
+            "name": "Joao Gutierre",
             "email": "gutierrejoao@gmail.com"
         }
     ],
-    "require":{},
-    "autoload":{
-        "psr-4":{
-              "Sts\\": "app/sts"  ,
-              "Core\\": "core"
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sts\\": "app/sts",
+            "Core\\": "core"
         }
     }
 }
