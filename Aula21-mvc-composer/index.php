@@ -10,7 +10,8 @@
 
         use Core\ConfigController as Home;
 
-        $url = new Home();
+        $Url = new Home();
+        $Url->carregar();
 
         ?>
     </body>
