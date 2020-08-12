@@ -13,10 +13,13 @@ use Sts\Models\StsListarBlog;
  */
 
 class Blog{
+    public $Dados;
+
     public function index(){
-        echo "Carregando a porra da controller da página blog.<br><hr>";
+        //echo "Carregando a porra da controller da página blog.<br><hr>";
 
         $listarArtigo = new StsListarBlog();
-        $listarArtigo->listar();
+        $this->Dados = $listarArtigo->listar();
+        var_dump($this->Dados);
     }
 }

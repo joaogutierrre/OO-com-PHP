@@ -32,7 +32,7 @@ class ConfigController
             $this->UrlController = 'home';
             $this->UrlMetodo = 'index';
         }
-        echo "Classe: {$this->UrlController} - Método: {$this->UrlMetodo}<br>";
+        //echo "Classe: {$this->UrlController} - Método: {$this->UrlMetodo}<br>";
         //echo "URL: {$this->Url} <br>";
     }
 
